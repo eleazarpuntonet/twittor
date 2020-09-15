@@ -1,9 +1,9 @@
 
-let URL = window.location.URL
+const path = window.location.href
 let swLocation = '/twittor/sw.js'
 
 if( navigator.serviceWorker ){
-    if(URL.includes('localhost')){
+    if(path.includes('localhost')){
         let swLocation = '/sw.js'
     } else {
 
