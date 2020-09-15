@@ -5,8 +5,6 @@ let swLocation = '/twittor/sw.js'
 if( navigator.serviceWorker ){
     if(path.includes('localhost')){
         let swLocation = '/sw.js'
-    } else {
-
     }
     navigator.serviceWorker.register(swLocation)
 }
